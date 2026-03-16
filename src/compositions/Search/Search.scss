@@ -1,0 +1,48 @@
+.search {
+    display: flex;
+    align-items: center;    
+
+    .search__menu {
+        margin-left: auto;
+        position: relative;
+        width: 454px;
+        border-radius: 12px;
+        border: none;
+        background: #f6f7f9;
+    }
+    
+    .search__input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 35px 12px 35px;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        color: #182a42;
+        border: none;
+        outline: none;
+        background: transparent; // ключове
+    }
+    
+    .search__icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+    }
+    
+    .search__clear-btn {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: transparent;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}

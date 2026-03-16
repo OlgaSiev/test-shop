@@ -1,0 +1,183 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 4px;
+
+    .card__img img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .card__prices {
+        display: flex;
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .card__oldprice {
+            margin: 0;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            text-decoration: line-through;
+            color: #8090a4;
+        }
+
+        .card__price {
+            margin: 0;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            background: linear-gradient(90deg, #003181 0%, #2288ed 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card__discount {
+            display: flex;
+
+            .icon-arrow {
+                height: 22px;
+            }
+
+            .discount {
+                margin: 0;
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: -0.02em;
+                color: #fff;
+                background: #ff2741;
+            }
+        }
+    }
+
+    .card__descr {
+        padding-top: 12px;
+        padding-bottom: 16px;
+
+        .card__name {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: #182a42;
+        }
+    }
+
+    .card__valores {
+        display: flex;
+        gap: 12px;
+        margin-top: auto;
+
+        .card__rating {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            text-decoration-skip-ink: none;
+            color: #182a42;
+        }
+
+        .count {
+            text-decoration: underline;
+        }
+    }
+
+    .card__otros {
+        display: flex;
+        gap: 20px;
+
+        .card__stock {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: -0.02em;
+
+            &.in-stock {
+                color: green;
+            }
+            
+            &.out-stock {
+                color: red;
+            }
+        }
+
+        .card__category {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            color: #8090a4;
+        }
+    }
+
+    .card__volum-cesta {
+        position: relative;
+        display: flex;
+        gap: 12px;
+
+        .volum__selected {
+            box-sizing: border-box;
+            border: 1.50px solid #ebebeb;
+            border-radius: 15px;
+            padding: 12px;
+            background: #fff;
+            flex: 0 0 100px;
+        }
+
+        .volum__dropdown {
+            position: absolute;
+            top: 100%; // прямо під кнопкою
+            left: 0;
+            
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+            background: #f6f7f9;
+        }
+
+        .card__cesta {
+            flex: 1;
+        }
+        
+        .card__cesta button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+                
+            box-sizing: border-box;
+            border-radius: 15px;
+            padding: 12px;
+
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            color: #182a42;
+
+            icon {
+                width: 26px;
+                height: 26px;
+            }
+
+            button:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

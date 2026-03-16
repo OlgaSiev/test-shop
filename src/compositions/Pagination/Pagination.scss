@@ -1,0 +1,47 @@
+.pagination {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    text-align: center;
+
+    button {
+        border: none;
+        width: 46px;
+        height: 46px;
+        margin: 0 5px;
+        background-color: transparent;
+        
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        color: #182a42;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f5f7fa;
+            border-radius: 15px;
+        }
+
+        &.active {
+            border: 1.50px solid #43a0fd;
+            border-radius: 15px;
+        }
+
+        &.arrow {
+            font-weight: 700;
+            font-size: 18px;
+            background-color: transparent;
+            border: none;
+            color: #182a42;
+        
+            &:hover {
+                color: #43a0fd;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
