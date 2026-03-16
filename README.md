@@ -27,3 +27,7 @@ React
 Vite  
 SCSS  
 Axios
+
+## Live Demo
+
+https://test-shop-mu.vercel.app/
